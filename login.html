@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เข้าสู่ระบบ | เที่ยวบ้านเรา</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<p class="site-name">เที่ยวบ้านเรา</p>
+<nav><ul>
+<li><a href="index.html">หน้าแรก</a></li>
+<li><a href="places.html">ที่เที่ยว</a></li>
+<li><a href="food.html">อาหาร</a></li>
+<li><a href="plan.html">วางแผนเที่ยว</a></li>
+<li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+<li><a href="login.html" aria-current="page">เข้าสู่ระบบ</a></li>
+</ul></nav>
+</header>
+
+<main>
+<section class="card">
+<h1>เข้าสู่ระบบ</h1>
+<p>กรุณากรอกชื่อผู้ใช้และรหัสผ่าน</p>
+
+<form id="loginForm">
+<label for="username">ชื่อผู้ใช้</label>
+<input type="text" id="username" placeholder="กรอกชื่อผู้ใช้" required>
+
+<br><br>
+
+<label for="password">รหัสผ่าน</label>
+<input type="password" id="password" placeholder="กรอกรหัสผ่าน" required>
+
+<br><br>
+
+<button class="button" type="submit">เข้าสู่ระบบ</button>
+
+<p id="message"></p>
+</form>
+
+<a href="index.html">กลับสู่หน้าแรก</a>
+</section>
+</main>
+
+<footer>
+<p>002 คุนันยา นาคชู</p>
+</footer>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+event.preventDefault();
+document.getElementById("message").textContent =
+"เข้าสู่ระบบตัวอย่างเรียบร้อยแล้ว";
+});
+</script>
+
+</body>
+</html>

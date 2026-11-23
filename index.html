@@ -1,0 +1,92 @@
+
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>หน้าแรก | เที่ยวบ้านเรา</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <p class="site-name">เที่ยวบ้านเรา</p>
+    <nav aria-label="เมนูหลัก">
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="places.html">ที่เที่ยว</a></li>
+        <li><a href="food.html">อาหาร</a></li>
+        <li><a href="plan.html">วางแผนเที่ยว</a></li>
+        <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>เที่ยวบ้านเราในหนึ่งวัน</h1>
+
+<section class="card">
+    <h2>แกลลอรี่สถานที่ท่องเที่ยว</h2>
+    <p>สัมผัสความสวยงามของสถานที่ท่องเที่ยวในบ้านเรา</p>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="images/lukmuang.jpg" alt="ศาลหลักเมืองประจวบคีรีขันธ์">
+            <img src="images/KLM.jpg" alt="ภาพสถานที่ท่องเที่ยว">
+            <img src="images/Kaow.jpg" alt="ภาพสถานที่ท่องเที่ยว">
+            <img src="images/aomanow.jpg" alt="ภาพสถานที่ท่องเที่ยว">
+        </div>
+
+        <button class="prev" onclick="moveSlide(-1)">❮</button>
+        <button class="next" onclick="moveSlide(1)">❯</button>
+    </div>
+
+    <div class="dots">
+        <span onclick="lukmuang.jpg(0)"></span>
+        <span onclick="KLM.jpg(1)"></span>
+        <span onclick="Kaow.jpg(2)"></span>
+        <span onclick="aomanow.jpg(3)"></span>
+    </div>
+</section>
+
+<script>
+let slideIndex = 0;
+const slides = document.querySelector(".slides");
+const dots = document.querySelectorAll(".dots span");
+
+function showSlide() {
+    slides.style.transform =
+        "translateX(-" + (slideIndex * 100) + "%)";
+
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[slideIndex].classList.add("active");
+}
+
+function moveSlide(n) {
+    slideIndex = (slideIndex + n + 4) % 4;
+    showSlide();
+}
+
+function currentSlide(n) {
+    slideIndex = n;
+    showSlide();
+}
+
+showSlide();
+
+setInterval(() => {
+    moveSlide(1);
+}, 3000);
+</script>
+
+    <p>ชวนเดินตลาด ชิมอาหารพื้นถิ่น และพักชมวิวในชุมชน</p>
+    <section class="card">
+      <h2>เริ่มจากจุดที่คุณสนใจ</h2>
+      <p>เลือกสถานที่ที่อยากไป แล้วจัดเส้นทางให้เหมาะกับเวลาของคุณ</p>
+      <a class="button" href="places.html">ดูแหล่งท่องเที่ยว</a>
+    </section>
+  </main>
+  <footer>
+    <p>คุนันยา นาคชู002 | ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+  </footer>
+</body>
+</html>
+```

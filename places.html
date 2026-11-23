@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วางแผนเที่ยวประจวบคีรีขันธ์ 1 วัน | เที่ยวบ้านเรา</title>
+    <!-- นำเข้าฟอนต์ภาษาไทยสวยๆ จาก Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        body {
+            background-color: #b9848c; /* สีพื้นหลังโทนชมพูตุ่นเหมือนหน้าแรก */
+            color: #2c2c2c;
+            line-height: 1.6;
+        }
+
+        /* แถบเมนูด้านบน */
+        header {
+            background-color: #f27289; /* สีแถบเมนูชมพูอมส้มเหมือนหน้าแรก */
+            padding: 15px 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .site-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 0.95rem;
+            transition: opacity 0.2s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        /* ส่วนเนื้อหาหลัก */
+        main {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .page-header h1 {
+            font-size: 2rem;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .page-header p {
+            color: #2c2c2c;
+            font-size: 1rem;
+        }
+
+        /* กล่องการ์ดสีครีมเหมือนภาพตัวอย่าง */
+        .card {
+            background-color: #f3ebd9;
+            border-radius: 18px;
+            padding: 30px 35px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            font-size: 1.35rem;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #e0d4bc;
+            padding-bottom: 8px;
+        }
+
+        .card p {
+            margin-bottom: 8px;
+            font-size: 1rem;
+            color: #333333;
+        }
+
+        /* รูปภาพในการ์ด */
+        .image-box {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .image-box img {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover; /* ทำให้รูปเต็มกรอบสวยงามไม่เหลือขอบขาว */
+            border-radius: 15px;
+            display: block;
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            color: #555555;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* รายการสิ่งที่ควรเตรียม */
+        .card ul {
+            padding-left: 25px;
+            color: #333333;
+        }
+
+        .card ul li {
+            margin-bottom: 6px;
+        }
+
+        /* ส่วนท้ายเว็บ */
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #1a1a1a;
+            font-size: 0.95rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ส่วนหัวและเมนู (เพิ่มให้เหมือนหน้าแรก) -->
+    <header>
+        <div class="site-title">เที่ยวบ้านเรา</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="#">ที่เที่ยว</a></li>
+                <li><a href="#">อาหาร</a></li>
+                <li><a href="places.html">วางแผนเที่ยว</a></li>
+                <li><a href="#">ข้อมูลการเดินทาง</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>วางแผนเที่ยวประจวบคีรีขันธ์ 1 วัน</h1>
+            <p>ตัวอย่างการจัดตารางเที่ยวให้ครบทั้งสถานที่สำคัญและธรรมชาติ</p>
+        </div>
+
+        <!-- การ์ดรูปภาพการเดินทาง -->
+        <section class="card">
+            <div class="image-box">
+                <img src="images/ll.jpg" alt="แผนที่การเดินทางจังหวัดประจวบคีรีขันธ์">
+            </div>
+            <p class="caption">สัมผัสความสวยงามของจุดชมวิวเมืองสามอ่าว จังหวัดประจวบคีรีขันธ์</p>
+        </section>
+
+        <section class="card">
+            <h2>ช่วงเช้า</h2>
+            <p><strong>08.00 น.</strong> เดินทางไปศาลหลักเมืองประจวบคีรีขันธ์</p>
+            <p><strong>09.30 น.</strong> ไปชมวิวที่เขาช่องกระจก</p>
+        </section>
+
+        <section class="card">
+            <h2>ช่วงกลางวัน</h2>
+            <p><strong>12.00 น.</strong> รับประทานอาหารกลางวันและชิมอาหารทะเล</p>
+        </section>
+
+        <section class="card">
+            <h2>ช่วงบ่าย</h2>
+            <p><strong>14.00 น.</strong> เดินเล่นและพักผ่อนที่อ่าวมะนาว</p>
+            <p><strong>16.00 น.</strong> ชมวิวทะเลและถ่ายภาพเป็นที่ระลึก</p>
+        </section>
+
+        <section class="card">
+            <h2>สิ่งที่ควรเตรียม</h2>
+            <ul>
+                <li>โทรศัพท์มือถือ</li>
+                <li>หมวกและครีมกันแดด</li>
+                <li>น้ำดื่ม</li>
+                <li>เงินสด</li>
+                <li>กล้องถ่ายรูป</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>002 คุนันยา นาคชู</p>
+    </footer>
+
+</body>
+</html>
